@@ -28,7 +28,6 @@ body {
     justify-content: space-between;
     gap: 40px;
     flex-wrap: wrap;
-    /* Responsivo */
 }
 
 .video iframe {
@@ -80,17 +79,15 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Aqui o truque para deixar o mapa bonito */
 .map-container {
   width: 80%;
   max-width: 900px;
   margin: 0 auto;
   border-radius: 25px;
-  overflow: hidden; /* Faz o iframe respeitar o border-radius */
+  overflow: hidden; 
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Mantém a proporção e o mapa responsivo */
 .map-container iframe {
   width: 100%;
   aspect-ratio: 16 / 9;
