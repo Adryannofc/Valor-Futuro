@@ -1,11 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <title>Valor Futuro</title>
 </head>
+
 <body>
-    
+
+    <!-- Header -->
+    <header class="header">
+        <h1>HEADER</h1>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="../assets/img/595265_Clay Kids School Classroom_By_Pressmaster_Artlist_HD.mp4"
+                type="video/mp4">
+            Seu navegador não suporta vídeos em HTML5.
+        </video>
+
+        <div class="overlay">
+            <div class="banner-text">
+                <h1>O melhor do mercado em<br>favor do seu <strong>Bem-estar</strong> e da sua <strong>Família</strong>
+                </h1>
+            </div>
+
+            <div class="form-container">
+                <h3>Faça seu cadastro e entraremos em contato com você.</h3>
+                <form>
+                    <input type="text" placeholder="Nome Completo" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Telefone (DDD)" required>
+                    <select required>
+                        <option value="">Qual sua renda média mensal?</option>
+                        <option>Até R$2.000</option>
+                        <option>R$2.000 - R$5.000</option>
+                        <option>Acima de R$5.000</option>
+                    </select>
+                    <select required>
+                        <option value="">Qual seu objetivo financeiro?</option>
+                        <option>Investimentos</option>
+                        <option>Empréstimos</option>
+                        <option>Planejamento Familiar</option>
+                    </select>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="produtos">
+        <h2>Confira nossos Produtos e Serviços</h2>
+
+        <div class="cards-container">
+            <div class="card">
+                <img src="../assets/img/man-with-sales-woman-car-showroom.jpg" alt="Consórcios">
+                <h3>Consórcios</h3>
+                <p>Para carros, motos e caminhões novos e seminovos.</p>
+                <button>Saiba mais</button>
+            </div>
+
+            <div class="card">
+                <img src="../assets/img/happy-customer-buying-brand-new-car-local-car-dealership.jpg" alt="Seguros">
+                <h3>Seguros</h3>
+                <p>São várias opções de coberturas e vantagens especiais.</p>
+                <button>Saiba mais</button>
+            </div>
+
+            <div class="card">
+                <img src="../assets/img/middle-age-hispanic-woman-using-laptop-holding-credit-card-home.jpg"
+                    alt="Crédito Pessoal">
+                <h3>Crédito Pessoal</h3>
+                <p>Crédito prático com agilidade para tirar planos do papel.</p>
+                <button>Saiba mais</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="produtos">
+        <h2>Confira também</h2>
+
+        <div class="cards-container">
+            <div class="card">
+                <img src="../assets/img/medium-shot-environmental-engineer-holding-laptop.jpg" alt="Energia Solar">
+                <h3>Energia Solar por Assinatura</h3>
+                <p>Economize ainda mais sua conta de energia.</p>
+                <button>Saiba mais</button>
+            </div>
+
+            <div class="card">
+                <img src="../assets/img/male-doctor-showing-xray-pictures-teeth-tablet.jpg" alt="Plano Dental">
+                <h3>Plano Dental</h3>
+                <p>Invista na sua saúde bucal e qualidade de vida.</p>
+                <button>Saiba mais</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre-nos">
+        <div class="sobre-container">
+
+            <div class="video">
+                <iframe width="800" height="315" src="https://www.youtube.com/embed/Y7cpCDlRfV0?si=zptrU7TGA6mn_3-m"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="texto">
+                <h2>Sobre Nós</h2>
+                <p>
+                    Ampla experiência, metodologia atual, forte política de trabalho e total compromisso
+                    com a satisfação de nossos clientes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="unidade">
+        <h2>📍 UNIDADE</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.6440800599553!2d-54.58601662280408!3d-25.516914136339775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f6906c4a6da37d%3A0x44fcadd12ca8d722!2sAv.%20Jos%C3%A9%20Maria%20de%20Brito%2C%201048%20-%20Jardim%20das%20Nacoes%2C%20Foz%20do%20Igua%C3%A7u%20-%20PR%2C%2085864-320!5e0!3m2!1spt-BR!2sbr!4v1760827935351!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <h1>Footer</h1>
+    </footer>
 </body>
+
 </html>
