@@ -1,41 +1,32 @@
-export function createCard(img,titulo,descricao,button)
-{
-    const container = document.querySelector('.cards-container')
-    const card = document.createElement('div')
-    card.classList.add('card')
+export function createCard(container, img, titulo, descricao) {
+  const maxCards = 3; // limite por container
+  
 
-    
-    const img = document.createElement('img');
-    img.classList.add('card-img'); 
-    img.src = img;
-    img.alt = '';
+  if (container.querySelectorAll('.card').length >= maxCards) {
+    return;
+  }
+  const fragment = document.createDocumentFragment();//cria o fragment
+  const card = document.createElement('div');
+  card.classList.add('card');
 
-    const h3 = document.createElement('h3');
-    h3.classList.add('card-title');
-    h3.textContent = titulo;
+  const imagem = document.createElement('img');
+  imagem.classList.add('card-img');
+  imagem.src = img;
+  imagem.alt = '';
 
-    const p = document.createElement('p');
-    p.classList.add('card-p')
-    p.textContent = descricao;
+  const h3 = document.createElement('h3');
+  h3.classList.add('card-title');
+  h3.textContent = titulo;
 
-    const button = document.createElement('button');
-    button.classList.add('card-button');
-    button.textContent = 'Saiba mais'
+  const p = document.createElement('p');
+  p.classList.add('card-p');
+  p.textContent = descricao;
 
-    container.appendChild(card);
+  const buttonCard = document.createElement('button');
+  buttonCard.classList.add('card-button');
+  buttonCard.textContent = 'Saiba mais';
 
-
-
-
-
+  card.append(imagem, h3, p, buttonCard);
+  container.appendChild(card);
+  container.appendChild(fragment); //Cria todos os cards de uma vez
 }
-
-
-
-//  <div class="cards-container">
-//             <div class="card">
-//                 <img src="../assets/img/man-with-sales-woman-car-showroom-convertido-de-jpg.webp" alt="Consórcios">
-//                 <h3>Consórcios</h3>
-//                 <p>Para automoveis, imoveis e serviços.</p>
-//                 <button>Saiba mais</button>
-//             </div>
