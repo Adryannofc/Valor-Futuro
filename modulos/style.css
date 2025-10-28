@@ -10,9 +10,12 @@
 body {
     background-color: #f4f4f4;
     color: #333;
-
+    font-size: 16px;
+    transition: font-size 0.3s ease;
 }
-
+img{
+    width: 20px;
+}
 .header {
     text-align: center;
     height: 60px;
@@ -100,4 +103,63 @@ body {
     background-color: #fff;
     text-align: center;
     height: 80px;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+    margin-top: 5px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0 6rem;
+    height: 80px;
+    box-shadow: 1px 1px 5px #ccc;
+   
+}
+
+.ul-list{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.ul-list li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+.nav-contato{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-contato a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.fontbutton{
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.fontbutton button{
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
 }

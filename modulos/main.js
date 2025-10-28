@@ -40,3 +40,16 @@ function dinamiqueScroll() {
 }
 
 dinamiqueScroll();
+
+function alterarFonte(acao) {
+    const elemento = document.getElementById('conteudo-principal');
+    let tamanhoAtual = parseFloat(window.getComputedStyle(elemento).fontSize);
+
+    if (acao === 'aumentar') {
+      tamanhoAtual += 2; // Aumenta em 2px
+    } else if (acao === 'diminuir') {
+      tamanhoAtual -= 2; // Diminui em 2px
+    }
+    
+    elemento.style.fontSize = tamanhoAtual + 'px';
+  }
