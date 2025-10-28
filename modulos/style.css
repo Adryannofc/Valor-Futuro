@@ -99,9 +99,140 @@ img{
   border: none;
 }
 
+#logo {
+    width: 80px;
+    height: 80px;
+    margin-top: 5px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0 6rem;
+    height: 80px;
+    box-shadow: 1px 1px 5px #ccc;
+   
+}
+
+.ul-list{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.ul-list li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+.nav-contato{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-contato a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.fontbutton{
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.fontbutton button{
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+
 .footer {
-    background-color: #fff;
+  display: flex;                 
+  justify-content: space-between;
+  align-items: center;            
+  padding: 70px;
+  background-color: #ffffff;         
+  color: #090909;
+  box-shadow: 0px 2px 10px #ccc;                  
+}
+
+.footer div,
+.footer nav {
+  flex: 1;                       
+}
+
+.footer img {
+    width: 25px;
+    height: 25px;
+  
+  height: auto;
+}
+
+.footer .logos-redes {
+  display: flex;
+  align-items: center;
+  gap: 10px;                      
+}
+
+.footer .dados {
+  text-align: left;               
+}
+.footer-info {
     text-align: center;
+<<<<<<< HEAD
+    margin: 0 auto;
+    background-color: white;             
+}
+.footer-logo {
+  display: flex;                
+  align-items: center;         
+  justify-content: flex-start;  
+  gap: 10px; 
+  margin-bottom: 20px;               
+}
+
+.footer-logo img {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+}
+
+.footer-texto {
+  display: flex;
+  flex-direction: column;       
+  line-height: 1.2;             
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+.dados p {
+  display: flex;           
+  align-items: center;      
+  gap: 8px;                
+  margin-bottom: 15px;
+        
+}
+
+.dados p img {
+  width: 20px;              
+  height: 20px;
+  object-fit: contain;      
+}
+.dados h2{
+    margin-bottom: 5px;
+=======
     height: 80px;
 }
 
